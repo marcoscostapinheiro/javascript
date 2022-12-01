@@ -1,0 +1,4 @@
+var, let - cria uma variavel
+  obs: primeiro cria-se o identificador da variavel seguido de um =(recebe).
+typeof - mostra o tipo da variavel
+
