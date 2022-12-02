@@ -1,4 +1,17 @@
-var, let - cria uma variavel
-  obs: primeiro cria-se o identificador da variavel seguido de um =(recebe).
-typeof - mostra o tipo da variavel
+Entrada e saída de dados
 
+  alert - aparece uma caixa de alerta na tela
+  prompt - cria uma caixa para entrada de dados
+    obs: o prompt utiliza os dados no formato string, para tratar dados numericos precisa- converte-los
+  converter tipos primitivos - valores númericos(Number.parseInt(variavel) para inteiros, Number.parseFloat(variavel) para   reais ou só Number(variavel)), strings(variavel.toString() ou String(variavel))
+  var, let - cria uma variavel
+    obs: primeiro cria-se o identificador da variavel seguido de um =(recebe).
+  typeof - mostra o tipo da variavel
+  para a saída de dados utiliza-se o + para concatenação(unir uma string a uma variavel) ou utilizar a frase entre crase(`)   e um placeholder ${variavel}
+  para saida de dados na tela do html utiliza-se document.write()
+  variavel.length() - mostra quantos caracteres a string tem
+  variavel.toUpperCase() - transforma os caracteres das strings em maiusculas
+  variavel.toLowerCase() - transforma os caracteres das strings em minusculas
+  variavel.toFixed(casas decimais) - utiliza-se em numeros reais, monstrando quantas casas decimais irão aparecer
+  .replace('', '') - troca um valor por outro
+  para transformar um numero em dinheiro(real por exemplo) utiliza-se variavel.toLocaleString('pt-BR', {style: 'currency',   currency: 'BRL'})
