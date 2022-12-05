@@ -26,3 +26,11 @@ Operadores
     / - divisão
     % - resto da divisão
     ** - potênciação
+
+    Simplificando atribuições
+   
+       Ao realizar uma conta de n = n + 2 por exemplo, pode-se simplificar da seguinte forma: n += 2, n = n - 2: n -= 2
+
+       Incremento:	
+
+       Ao realizar uma conta de n = n + 1 por exemplo, pode-se simplificar da seguinte forma: n ++, n = n - 1: n --, para          para contas onde o operando é 1. Esses são os pós-incremento, ou seja, o resultado vem após o incremento, e temos o         pre-incremento, ou seja, o resultado vem antes da atribuição, ao inves de utilizar n ++ ou n --, utliza-se operador         antes da variavel, ficando ++ n ou -- n
