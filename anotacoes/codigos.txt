@@ -15,3 +15,14 @@ Entrada e saída de dados
   variavel.toFixed(casas decimais) - utiliza-se em numeros reais, monstrando quantas casas decimais irão aparecer
   .replace('', '') - troca um valor por outro
   para transformar um numero em dinheiro(real por exemplo) utiliza-se variavel.toLocaleString('pt-BR', {style: 'currency',   currency: 'BRL'})
+
+Operadores
+ 
+  Aritmeticos
+    
+    + - adição
+    - - subtração
+    * - multiplicação
+    / - divisão
+    % - resto da divisão
+    ** - potênciação
