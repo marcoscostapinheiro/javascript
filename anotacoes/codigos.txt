@@ -26,6 +26,14 @@ Operadores
     / - divisão
     % - resto da divisão
     ** - potênciação
+    () - parenteses
+
+    Ordem de precedencia
+
+    () - parenteses
+    ** - potenciação
+    *, /, % - multiplicação, divisão e resto da divisão
+    +, - - adição e subtração
 
     Simplificando atribuições
    
@@ -34,3 +42,38 @@ Operadores
        Incremento:	
 
        Ao realizar uma conta de n = n + 1 por exemplo, pode-se simplificar da seguinte forma: n ++, n = n - 1: n --, para          para contas onde o operando é 1. Esses são os pós-incremento, ou seja, o resultado vem após o incremento, e temos o         pre-incremento, ou seja, o resultado vem antes da atribuição, ao inves de utilizar n ++ ou n --, utliza-se operador         antes da variavel, ficando ++ n ou -- n
+
+  Relacionais
+  
+    > - maior que
+    < - menor que
+    == - igual
+    >= - maior ou igual
+    <= - menor ou igual
+    != diferente
+    === - identico
+    !== - diferente restrito
+      obs: todos os operadores retornam o valor true ou false
+
+  Lógicos
+  
+    ! - negação(não) 
+    && - conjunção(e) 
+    || - disjunção(ou)
+
+    Ordem de precedencia
+
+    (), **, / - aritmeticos
+    >, <, ==, != - relacionais
+    ! - logico
+    && - logico
+    || - logico
+
+  Ternario 
+
+    ? - teste logico(true ou false)
+    : - retorna o valor true ou false
+      exemplo: idade = 18, var maioridade = idade >= 18? 'MAIOR': 'MENOR'(idade é maior ou igual a 18? se sim(true),       maioridade recebe 'MAIOR', se nao(false), maioridade recebe 'MENOR')
+    
+
+  
