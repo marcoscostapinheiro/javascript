@@ -41,7 +41,7 @@ Operadores
 
        Incremento:	
 
-       Ao realizar uma conta de n = n + 1 por exemplo, pode-se simplificar da seguinte forma: n ++, n = n - 1: n --, para          para contas onde o operando é 1. Esses são os pós-incremento, ou seja, o resultado vem após o incremento, e temos o         pre-incremento, ou seja, o resultado vem antes da atribuição, ao inves de utilizar n ++ ou n --, utliza-se operador         antes da variavel, ficando ++ n ou -- n
+         Ao realizar uma conta de n = n + 1 por exemplo, pode-se simplificar da seguinte forma: n ++, n = n - 1: n --, para          para contas onde o operando é 1. Esses são os pós-incremento, ou seja, o resultado vem após o incremento, e temos          o pre-incremento, ou seja, o resultado vem antes da atribuição, ao inves de utilizar n ++ ou n --,                   utliza-se operador antes da variavel, ficando ++ n ou -- n
 
   Relacionais
   
@@ -73,7 +73,17 @@ Operadores
 
     ? - teste logico(true ou false)
     : - retorna o valor true ou false
-      exemplo: idade = 18, var maioridade = idade >= 18? 'MAIOR': 'MENOR'(idade é maior ou igual a 18? se sim(true),       maioridade recebe 'MAIOR', se nao(false), maioridade recebe 'MENOR')
-    
+      exemplo: idade = 18, var maioridade = idade >= 18? 'MAIOR': 'MENOR'(idade é maior ou igual a 18? se sim(true),             maioridade recebe 'MAIOR', se nao(false), maioridade recebe 'MENOR')
+
+DOM
+
+  O DOM(Documento Object Model) é o conjunto de objetos que compõe a estrutura de um site(head, body, por exemplo).
+  
+  Para representar um objeto do DOM, utilizamos o ponto seguido o objeto, por exemplo, window.documento.
+  Podemos selecionar o objeto por marca(tag) utilizando o comando getElementsByTagName('nome da tag')[1ª, 2ª... tag]
+  Podemos selecionar o objeto por id(identificador no HTML) utilizando getElementById('id do elemento')
+  Podemos selecionar o objeto por nome(identificador no HTML) utilizando getElementsByName('name do elemento')[1ª, 2ª...   tag]
+  Podemos selecionar o objeto por seletor(igual as CSS) utilizando querySelector('elemento com .(class) ou #(id)')
+  
 
   
