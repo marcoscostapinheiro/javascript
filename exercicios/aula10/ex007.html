@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            width: 400px;
+            height: 400px;
+        }
+
+        main > h1{
+            text-align: center;
+        }
+
+        form{
+            margin: 70px 0px 0px 130px;
+        }
+
+        input.num{
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        div#botao{
+            margin-top: 20px;
+        }
+
+        div#botao > input{
+            padding: 10px 45px;
+        }
+
+        div#res{
+            border: 2px solid rgb(155, 155, 155);
+            margin: 20px 0px 0px 130px;
+            width: 130px;
+            text-align: center;
+            padding: 8px 0px;
+            font-size: 1.8em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Somando valores</h1>
+        <form>
+            <div id="campo">
+                <input type="number" name="num1" id="inum1" class="num">
+                +
+                <input type="number" name="num2" id="inum2" class="num">
+            </div>
+            <div id="botao">
+                <input type="button" value="Somar" onclick="soma()">
+            </div>
+        </form>
+        <div id="res">Resultado</div>
+    </main>
+
+    <script>
+        function soma(){
+            var txt1 = document.getElementById('inum1')
+            var txt2 = document.getElementById('inum2')
+            var a = Number(txt1.value)
+            var b = Number(txt2.value)
+            var s = a + b
+            var area = document.getElementById('res')
+            area.innerHTML = s
+        }
+    </script>
+</body>
+</html>

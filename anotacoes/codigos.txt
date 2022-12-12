@@ -3,7 +3,7 @@ Entrada e saída de dados
   alert - aparece uma caixa de alerta na tela
   prompt - cria uma caixa para entrada de dados
     obs: o prompt utiliza os dados no formato string, para tratar dados numericos precisa- converte-los
-  converter tipos primitivos - valores númericos(Number.parseInt(variavel) para inteiros, Number.parseFloat(variavel) para   reais ou só Number(variavel)), strings(variavel.toString() ou String(variavel))
+  converter tipos primitivos - valores númericos(Number.parseInt(variavel) para inteiros, Number.parseFloat(variavel) para    reais ou só Number(variavel)), strings(variavel.toString() ou String(variavel))
   var, let - cria uma variavel
     obs: primeiro cria-se o identificador da variavel seguido de um =(recebe).
   typeof - mostra o tipo da variavel
@@ -84,6 +84,10 @@ DOM
   Podemos selecionar o objeto por id(identificador no HTML) utilizando getElementById('id do elemento')
   Podemos selecionar o objeto por nome(identificador no HTML) utilizando getElementsByName('name do elemento')[1ª, 2ª...   tag]
   Podemos selecionar o objeto por seletor(igual as CSS) utilizando querySelector('elemento com .(class) ou #(id)')
+
+Eventos no DOM
+ 
+  Podemos identificar quando ocorre um evento em um elemento do dom, por exemplo, um clique do mouse(click), o mouse entrar   em um elemento(mouseenter), o mouse sair de um elemento(mouseout), e trabalhar com isso no javascript criando uma função  ( function nome(){}) em cima o evento no DOM. Podemos identificar os eventos no html, criando os parametros do evento,   onclick(click) = 'função()', onmouseenter(mouseenter) = 'função()', onmouseout(mouseout) = 'função()', por exemplo, ou no   próprio javascript com o addEventListener.
   
 
   
