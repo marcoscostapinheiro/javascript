@@ -87,7 +87,9 @@ DOM
 
 Eventos no DOM
  
-  Podemos identificar quando ocorre um evento em um elemento do dom, por exemplo, um clique do mouse(click), o mouse entrar   em um elemento(mouseenter), o mouse sair de um elemento(mouseout), e trabalhar com isso no javascript criando uma função  ( function nome(){}) em cima o evento no DOM. Podemos identificar os eventos no html, criando os parametros do evento,   onclick(click) = 'função()', onmouseenter(mouseenter) = 'função()', onmouseout(mouseout) = 'função()', por exemplo, ou no   próprio javascript com o addEventListener.
+  Podemos identificar quando ocorre um evento em um elemento do dom, por exemplo, um clique do mouse(click), o mouse entrar   em um elemento(mouseenter), o mouse sair de um elemento(mouseout), e trabalhar com isso no javascript criando uma função    ( function nome(){}) em cima o evento no DOM. Podemos identificar os eventos no html, criando os parametros do evento,     onclick(click) = 'função()', onmouseenter(mouseenter) = 'função()', onmouseout(mouseout) = 'função()', por exemplo, ou no   próprio javascript com o addEventListener.
+
+Um bloco é representado por chaves({})
   
 
   
