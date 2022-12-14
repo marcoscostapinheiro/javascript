@@ -106,6 +106,26 @@ Condições
     }else{
         comando
     }
+
+  Mútilplas
+
+    switch(expressão){
+      case valor 1:
+        comando
+        break
+      case valor 2:
+        comando
+	break
+      case valor 3:
+	comando
+	break
+      default:(obs: caso os de cima não sejam satisfeitos)
+	comando
+        break	
+    }
+	obs: o break é obrigatório após o fim de cada case, caso nao tenha o break, ele irá executar todos os comandos         debaixo até encontrar o primeiro break.
+
+Para pegar a hora atual basta criar uma variavel que recebe o codigo new Date(), criar outra variavel que vai receber a primeira variavel.getHours()
   
 
   
