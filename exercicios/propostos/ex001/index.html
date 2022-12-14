@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horrário</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Hora do Dia</h1>
+        </header>
+        <section>
+            <p id="hora"></p>
+            <div id="imagem">
+            
+            </div>
+        </section>
+    </main>
+    <footer>&#169 Marcos Costa Pinheiro</footer>
+
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        document.getElementById('hora').innerText = `Agora são ${hora} horas`
+        if (hora < 12 && hora >= 5){
+            document.body.style.backgroundColor = '#CFBE8F'
+            document.getElementById('imagem').style.background = 'black url(imagens/dia.jpg) center center no-repeat fixed'
+            document.getElementById('imagem').style.backgroundSize = 'cover'
+        }
+        else if (hora >= 12 && hora < 18){
+            document.body.style.backgroundColor = '#A57662'
+            document.getElementById('imagem').style.background = 'black url(imagens/tarde.jpg) center center no-repeat fixed'
+            document.getElementById('imagem').style.backgroundSize = 'cover'
+        }
+        else{
+            document.body.style.backgroundColor = '#4A4C4C'
+            document.getElementById('imagem').style.background = 'black url(imagens/noite.jpg) center center no-repeat fixed'
+            document.getElementById('imagem').style.backgroundSize = 'cover'
+        }
+    </script>
+</body>
+</html>
