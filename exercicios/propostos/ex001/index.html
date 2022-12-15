@@ -22,9 +22,11 @@
     <footer>&#169 Marcos Costa Pinheiro</footer>
 
     <script>
-        var agora = new Date()
-        var hora = agora.getHours()
-        document.getElementById('hora').innerText = `Agora são ${hora} horas`
+        var agorah = new Date()
+        var agoram = new Date()
+        var hora = agorah.getHours()
+        var min = agoram.getMinutes()
+        document.getElementById('hora').innerText = `Agora são ${hora}:${min} horas`
         if (hora < 12 && hora >= 5){
             document.body.style.backgroundColor = '#CFBE8F'
             document.getElementById('imagem').style.background = 'black url(imagens/dia.jpg) center center no-repeat fixed'
