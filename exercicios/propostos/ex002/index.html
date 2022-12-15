@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Identificador de Idade</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <main>
@@ -12,12 +13,55 @@
             <h1>Verificador de Idade</h1>
         </header>
         <section>
-
+            <form method="get">
+                <div id="txtano">
+                    Ano de nascimento:
+                    <input type="number" name="ano" id="iano">
+                </div>
+                <div id="txtsex">
+                    Sexo:
+                    <input type="radio" name="sex" id="imasc" value="M">
+                    <label for="imasc">Masculino</label>
+                    <input type="radio" name="sex" id="ifem" value="F">
+                    <label for="ifem">Feminino</label>
+                </div>
+                <div id="botao">
+                    <input type="button" value="Identificar" onclick="ident()">
+                </div>
+            </form>
+            <div id="res">
+            
+                <p id="idade"> Detectamos homem com 4 anos</p>
+                <div id="imagem">
+                    
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        
-    </footer>
     
+    <script>
+        function ident(){
+            var agora = new Date()
+            var anoatual = agora.getFullYear()
+            var txtano = document.getElementById('iano')
+            var anonasc = Number(txtano.value)
+            var idade = anoatual - anonasc
+            var txtsex = document.getElementsByName('sex')
+            var sex = ''
+
+            if (txtsex[0].checked){
+                sex = 'H'
+                document.write('Homem')
+            }
+            else{
+                sex = 'F'
+                document.write('Mulher')
+            }
+
+            if (idade < 10 && sex == 'H'){
+                document.getElementById('imagem')
+            }
+        }
+    </script>
 </body>
 </html>
