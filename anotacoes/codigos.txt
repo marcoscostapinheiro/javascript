@@ -126,6 +126,16 @@ Condições
 	obs: o break é obrigatório após o fim de cada case, caso nao tenha o break, ele irá executar todos os comandos         debaixo até encontrar o primeiro break.
 
 Para pegar a hora atual basta criar uma variavel que recebe o codigo new Date(), criar outra variavel que vai receber a primeira variavel.getHours()
+
+Laços de repetição
+
+  Com teste lógico no início
+  
+    While(enquanto) é usado para laços de repetição com teste lógico no início. while(condição){código}.
+
+  Com teste lógico no final
+
+    Do(faça) é usado para laços de repetição com teste lógico no final. do{código}while(condição).
   
 
   
