@@ -4,68 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Contador</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
-        <h1>Vamos Contar</h1>
+        <h1>Tabuada</h1>
     </header>
     <main>
-        <section id="conteudo">
+        <section>
             <div id="form">
                 <form>
-                    <div id="inicio">
-                        <label for="iini">Início:</label>
-                        <input type="number" name="ini" id="iini">
-                    </div>
-                    <div id="final">
-                        <label for="ifim">Fim:</label>
-                        <input type="number" name="fim" id="ifim">
-                    </div>
-                    <div id="passo">
-                        <label for="ipass">Passo:</label>
-                        <input type="number" name="pass" id="ipass">
-                    </div>
-                    <div id="botao">
-                        <input type="button" value="Contar" onclick="contar()">
+                    <div id="numero">
+                        <label for="inum">Número:</label>
+                        <input type="number" name="num" id="inum">
+                        <input type="button" value="Gerar Tabuada" onclick="tabuada()">
                     </div>
                 </form>
             </div>
             <div id="res">
-                Preparando a contagem...
+                        
             </div>
         </section>
     </main>
-    <footer><strong>&#169 Marcos Costa Pinheiro</strong></footer>
     
-    <script>
-        function contar(){
-            var txtini = document.getElementById('iini')
-            var ini = Number(txtini.value)
-            var txtfim = document.getElementById('ifim')
-            var fim = Number(txtfim.value)
-            var txtpasso = document.getElementById('ipass')
-            var passo = Number(txtpasso.value)
-            document.getElementById('res').innerHTML = '<p>Contando:</p>'
-            if (passo < 0){
-                passo *= -1
-            }
-
-            if (ini < fim){
-                for (var c = ini; c <= fim; c += passo){
-                document.getElementById('res').innerHTML += c
-                document.getElementById('res').innerHTML += '☛'
-                }
-            }
-            else if (ini > fim){
-                for (var c = ini; c >= fim; c -= passo){
-                document.getElementById('res').innerHTML += c
-                document.getElementById('res').innerHTML += '☛'
-                }
-            }
-            document.getElementById('res').innerHTML += 'FIM'
-        }
+    <script src="script.js">
     </script>
 </body>
 </html>
