@@ -136,6 +136,20 @@ Laços de repetição
   Com teste lógico no final
 
     Do(faça) é usado para laços de repetição com teste lógico no final. do{código}while(condição).
-  
 
+Variáveis compostas(Arrays/Vetores)
+
+  Uma variável composta é capaz de armazenar varios dados, diferente da variável simples que armazena apenas um. É composto   por seu elemento(espaço na variável), seu valor(dado que está dentro do elemento) e sua chave de identificação(sendo 0 a   primeira posição).                  -------- valor
+    ex:      variável composta - num  |
+                                 |1|2|3|------- elemento
+ 				  0 1 2
+                                  |-|-|
+				    |
+				    |___________ chave de identificação
+
+  Para se declarar uma variável composta utilizamos o var num[1, 2, 3], a cada valor adicionado utilizamos uma vírgula.
+  Para adicionar um valor ao último elemento da array utilizamos o metodo interno push, ficando: variavel.push(valor).
+  Para organizar os valores em ordem crescente utilizamos o metodo interno sort, ficando: variavel.sort()
+  for simplificado e otimizado para arrays e objects: for(var pos in variavel){}. Leia-se da seguinte forma: para cada     posição na variável composta.
+  Para encontrar um valor dentor de um array utilizamos o metodo iterno indexOf, ficando: variavel.indexOf(valor desejado).   Retornando a posição onde o valor foi encontrado, se não encontrar, ele retorna -1.
   
