@@ -150,6 +150,23 @@ Variáveis compostas(Arrays/Vetores)
   Para se declarar uma variável composta utilizamos o var num[1, 2, 3], a cada valor adicionado utilizamos uma vírgula.
   Para adicionar um valor ao último elemento da array utilizamos o metodo interno push, ficando: variavel.push(valor).
   Para organizar os valores em ordem crescente utilizamos o metodo interno sort, ficando: variavel.sort()
-  for simplificado e otimizado para arrays e objects: for(var pos in variavel){}. Leia-se da seguinte forma: para cada     posição na variável composta.
+  for simplificado e otimizado para arrays e objects: for(var pos in variavel){}. Leia-se da seguinte forma: para cada       posição na variável composta.
   Para encontrar um valor dentor de um array utilizamos o metodo iterno indexOf, ficando: variavel.indexOf(valor desejado).   Retornando a posição onde o valor foi encontrado, se não encontrar, ele retorna -1.
   
+Funções
+
+  Uma função possui uma chamada(inicia a função), um parâmetro(valor que fica dentro do parenteses da função), ação(código   a ser executado quando a função é chamada) e um retorno(retorna o resultado da ação).
+                         ___ parâmetro 
+                        |
+    ex: function parimp(n){
+      if (n % 2 == 0){ -------- ação
+        return 'PAR' -------- retorno
+      }
+      else{
+        return 'ÍMPAR'
+      }
+    }
+
+    var res = parimp(2) ------- chamada
+
+  Temos parâmetros pre-definidos(function soma(n1 = 0, n2 = 0)){}, esses parâmetros só são substituídos quando você passa   os parâmetros na chamada.
