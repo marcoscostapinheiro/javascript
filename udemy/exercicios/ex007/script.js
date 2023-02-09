@@ -6,4 +6,3 @@ let maioridade = false
 tela.innerText = `Nome: ${nome}`
 tela.innerText += `\n Idade: ${idade}`
 tela.innerText += `\n Maioridade: ${maioridade}`
-console.log('Olá, mundo!')
