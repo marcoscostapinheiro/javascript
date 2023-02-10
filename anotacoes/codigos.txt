@@ -178,3 +178,7 @@ Funções
   Recursion
 
     Invoca a função dentro da mesma função
+
+Gerar número aleatórios com um valor mínimo e máximo = Math.floor(Math.random() * (máximo - mínimo + 1)) + mínimo
+
+  Math.floor o número quebrado no menor numero inteiro próximo, o Math.random gera números aleatórios entre 0 e 1
