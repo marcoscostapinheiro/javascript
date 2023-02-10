@@ -170,3 +170,11 @@ Funções
     var res = parimp(2) ------- chamada
 
   Temos parâmetros pre-definidos(function soma(n1 = 0, n2 = 0)){}, esses parâmetros só são substituídos quando você passa   os parâmetros na chamada.
+
+  Closure
+
+    O closure é uma forma de acessar um escopo léxico de uma função pai de outra função
+
+  Recursion
+
+    Invoca a função dentro da mesma função
