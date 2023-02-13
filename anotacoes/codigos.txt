@@ -139,7 +139,7 @@ Laços de repetição
 
 Variáveis compostas(Arrays/Vetores)
 
-  Uma variável composta é capaz de armazenar varios dados, diferente da variável simples que armazena apenas um. É composto   por seu elemento(espaço na variável), seu valor(dado que está dentro do elemento) e sua chave de identificação(sendo 0 a   primeira posição).                  -------- valor
+  Uma variável composta é capaz de armazenar varios dados, diferente da variável simples que armazena apenas um. É composto   por seu elemento(espaço na variável), seu valor(dado que está dentro do elemento) e sua chave de identificação(sendo 0 a    primeira posição).                  -------- valor
     ex:      variável composta - num  |
                                  |1|2|3|------- elemento
  				  0 1 2
@@ -148,10 +148,34 @@ Variáveis compostas(Arrays/Vetores)
 				    |___________ chave de identificação
 
   Para se declarar uma variável composta utilizamos o var num[1, 2, 3], a cada valor adicionado utilizamos uma vírgula.
+  Para adicionar um valor ao primeiro elemento da array utilizamos o metodo interno unshift, ficando: variavel.unshift      (valor).
+  Para remover um valor do primeiro elemento da array utilizamos o metodo interno shift, ficando: variavel.shift().
   Para adicionar um valor ao último elemento da array utilizamos o metodo interno push, ficando: variavel.push(valor).
-  Para organizar os valores em ordem crescente utilizamos o metodo interno sort, ficando: variavel.sort()
+  Para remover um valor do último elemento da array utilizamos o metodo interno pop, ficando: variavel.pop().
+  Para encontrar o primeiro indice com valor da array utilizamos o metodo interno indexOf, ficando: variavel.indexOf    (valor), retornará a chave do primeiro valor encontrado.
+  Para encontrar o último indice com valor da array utilizamos o metodo interno lastIndexOf, ficando: variavel.lastIndexOf    (valor), retornará a chave do último valor encontrado.
+  Podemos verificar se um elemento existe dentro da variavel com o metodo interno inclues, ficando: variavel.includes  (valor).
+  Podemos mostrar o array apartir de um índice com o metodo interno slice, ficando: variavel.slice(indice de partida), este   metodo retorna toda a array apartir do indice selecionado, para ter um indice inicial e final(começa em um indice e vai     ate outro indice escolhido) precisamos utilizar 2 parametros no metodo, ficando: variavel(inicio, fim). Com números   negativos como indice final, ele remove as ultimas propriedades da array, exemplo: -2 removeria as duas ultimas   propriedades. Com indice inicial negativo, a contagem é de trás pra frente, sendo -1 o ultimo indice.
+  O metodo forEach retorna todo o valor da array, mas para isso precisamos criar uma arrow function, em uma array de   numeros por exemplo, ficando: variavel.forEach(num => {console.log(num)}), retornará cada valor da array.
+  Para organizar os valores em ordem crescente utilizamos o metodo interno sort, ficando: variavel.sort().
   for simplificado e otimizado para arrays e objects: for(var pos in variavel){}. Leia-se da seguinte forma: para cada        posição na variável composta.
   Para encontrar um valor dentor de um array utilizamos o metodo iterno indexOf, ficando: variavel.indexOf(valor desejado).   Retornando a posição onde o valor foi encontrado, se não encontrar, ele retorna -1.
+
+  Métodos e propriedades
+
+    Utilizamos propriedades para obtermos uma informação sobre o array ou objeto, array.length por exemplo.
+    Métodos servem como funções, ja pre-criadas pelo próprio javascript, array.toUpperCase() por exemplo, diferente das         propriedades, os métodos utilizam os () no final, igualmente as funções.
+
+Objetos
+
+  Objetos são arrays que podemos definir um nome para cada elemento criado, por exemplo let obj = {nome: 'Marcos',
+                                                                                                   Idade: 18},
+  porém, diferente dos arrays, objetos utilizam as chaves, para acessar cada elemento deve-se pegar o nome criado para     aquele elemento e utilizar como uma propriedade, obj.nome(retorna 'Marcos') por exemplo
+  Para criar um método deve-se criar uma function dentro do objeto e depois invocá-la como o exemplo de métodos acima.
+  Podemos adicionar ou remover uma propriedade de um objeto. Para adicionar basta escrever o nome do objeto seguido da     propriedade que deseja criar, obj.exemplo = 'Teste' por exemplo. Para remover basta escrever delete seguido do objeto com   a propriedade a ser excluída, delete obj.teste por exemplo.
+  Podemos copiar as propriedades de um objeto para outro, basta utilizar Object.assign(objeto onde será copiado, objeto a     ser copiado).
+  Podemos obter as chaves do objeto(nome da propriedade) com Object.keys(objeto), irá retornar uma array com todas as     chaves que compõem o objeto.
+  Mutação - podemos criar um objeto apartir de outro, por exemplo, let objt2 = objt, porém, qualquer mudança feita em ambos   os objetos, será aplicada a ambos.
   
 Funções
 
