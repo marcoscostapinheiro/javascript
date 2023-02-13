@@ -148,38 +148,53 @@ Variáveis compostas(Arrays/Vetores)
 				    |___________ chave de identificação
 
   Para se declarar uma variável composta utilizamos o var num[1, 2, 3], a cada valor adicionado utilizamos uma vírgula.
-  Para adicionar um valor ao primeiro elemento da array utilizamos o metodo interno unshift, ficando: variavel.unshift      (valor).
-  Para remover um valor do primeiro elemento da array utilizamos o metodo interno shift, ficando: variavel.shift().
-  Para adicionar um valor ao último elemento da array utilizamos o metodo interno push, ficando: variavel.push(valor).
-  Para remover um valor do último elemento da array utilizamos o metodo interno pop, ficando: variavel.pop().
-  Para encontrar o primeiro indice com valor da array utilizamos o metodo interno indexOf, ficando: variavel.indexOf    (valor), retornará a chave do primeiro valor encontrado.
-  Para encontrar o último indice com valor da array utilizamos o metodo interno lastIndexOf, ficando: variavel.lastIndexOf    (valor), retornará a chave do último valor encontrado.
-  Podemos verificar se um elemento existe dentro da variavel com o metodo interno inclues, ficando: variavel.includes  (valor).
-  Podemos mostrar o array apartir de um índice com o metodo interno slice, ficando: variavel.slice(indice de partida), este   metodo retorna toda a array apartir do indice selecionado, para ter um indice inicial e final(começa em um indice e vai     ate outro indice escolhido) precisamos utilizar 2 parametros no metodo, ficando: variavel(inicio, fim). Com números   negativos como indice final, ele remove as ultimas propriedades da array, exemplo: -2 removeria as duas ultimas   propriedades. Com indice inicial negativo, a contagem é de trás pra frente, sendo -1 o ultimo indice.
-  O metodo forEach retorna todo o valor da array, mas para isso precisamos criar uma arrow function, em uma array de   numeros por exemplo, ficando: variavel.forEach(num => {console.log(num)}), retornará cada valor da array.
-  Para organizar os valores em ordem crescente utilizamos o metodo interno sort, ficando: variavel.sort().
-  for simplificado e otimizado para arrays e objects: for(var pos in variavel){}. Leia-se da seguinte forma: para cada        posição na variável composta.
-  Para encontrar um valor dentor de um array utilizamos o metodo iterno indexOf, ficando: variavel.indexOf(valor desejado).   Retornando a posição onde o valor foi encontrado, se não encontrar, ele retorna -1.
+  Para adicionar um valor ao primeiro elemento da array utilizamos o metodo interno unshift, ficando: variavel.unshift        (valor).
+  
 
   Métodos e propriedades
 
     Utilizamos propriedades para obtermos uma informação sobre o array ou objeto, array.length por exemplo.
     Métodos servem como funções, ja pre-criadas pelo próprio javascript, array.toUpperCase() por exemplo, diferente das         propriedades, os métodos utilizam os () no final, igualmente as funções.
+    Para remover um valor do primeiro elemento da array utilizamos o metodo interno shift, ficando: variavel.shift().
+    Para adicionar um valor ao último elemento da array utilizamos o metodo interno push, ficando: variavel.push(valor).
+    Para remover um valor do último elemento da array utilizamos o metodo interno pop, ficando: variavel.pop().
+    Para encontrar o primeiro indice com valor da array utilizamos o metodo interno indexOf, ficando: variavel.indexOf          (valor), retornará a chave do primeiro valor encontrado.
+    Para encontrar o último indice com valor da array utilizamos o metodo interno lastIndexOf, ficando:         variavel.lastIndexOf    (valor), retornará a chave do último valor encontrado.
+    Podemos verificar se um elemento existe dentro da variavel com o metodo interno inclues, ficando: variavel.includes         (valor).
+    Podemos mostrar o array apartir de um índice com o metodo interno slice, ficando: variavel.slice(indice de partida),        este metodo retorna toda a array apartir do indice selecionado, para ter um indice inicial e final(começa em um             indice e vai ate outro indice escolhido) precisamos utilizar 2 parametros no metodo, ficando: variavel(inicio, fim).        Com números negativos como indice final, ele remove as ultimas propriedades da array, exemplo: -2 removeria as duas         ultimas propriedades. Com indice inicial negativo, a contagem é de trás pra frente, sendo -1 o ultimo indice.
+    O metodo forEach retorna todo o valor da array, mas para isso precisamos criar uma arrow function, em uma array de          numeros por exemplo, ficando: variavel.forEach(num => {console.log(num)}), retornará cada valor da array.
+    Para organizar os valores em ordem crescente utilizamos o metodo interno sort, ficando: variavel.sort().
+    for simplificado e otimizado para arrays e objects: for(var pos in variavel){}. Leia-se da seguinte forma: para cada        posição na variável composta.
+    O metodo reverse inverte uma array, deixando-a de trá pra frente, ficando: variavel.reverse().
+    O metodo trim remove tudo que nao for string em uma array, inclusive espaços, ficando: variavel.trim().
+    O metodo padstart padroniza uma string, deixando-o com um tamanho maximo permitido, ficando: variavel.padStart(valor        maximo, string).
+    O metodo split separa a string apartir da string selecionada(um espaço por exemplo), retornando uma array, ficando:         variavel.split('string separadora').
+    O metodo join é o contrario do split, ele junta strings apartir de um separador, ficando: variavel.join(string              separadora).
+    O metodo repeat repete uma palavra quantas vezes for mandada, ficando: 'palavra'.repeat(numero de repetições).
+    Para encontrar um valor dentor de um array utilizamos o metodo iterno indexOf, ficando: variavel.indexOf(valor            desejado). Retornando a posição onde o valor foi encontrado, se não encontrar, ele retorna -1.
+
+  Destructing 
+
+    Podemos copiar valores dentro de um array para outro, utilizando colchetes, ficando: let [nome da variavel a ser            criada] = array a ser copiado, as posições das variaveis influencia qual propriedade será copiada, exemplo: let [ex1        (primeira posição), ex2(segunda posição)].
 
 Objetos
 
   Objetos são arrays que podemos definir um nome para cada elemento criado, por exemplo let obj = {nome: 'Marcos',
                                                                                                    Idade: 18},
-  porém, diferente dos arrays, objetos utilizam as chaves, para acessar cada elemento deve-se pegar o nome criado para     aquele elemento e utilizar como uma propriedade, obj.nome(retorna 'Marcos') por exemplo
+  porém, diferente dos arrays, objetos utilizam as chaves, para acessar cada elemento deve-se pegar o nome criado para        aquele elemento e utilizar como uma propriedade, obj.nome(retorna 'Marcos') por exemplo
   Para criar um método deve-se criar uma function dentro do objeto e depois invocá-la como o exemplo de métodos acima.
-  Podemos adicionar ou remover uma propriedade de um objeto. Para adicionar basta escrever o nome do objeto seguido da     propriedade que deseja criar, obj.exemplo = 'Teste' por exemplo. Para remover basta escrever delete seguido do objeto com   a propriedade a ser excluída, delete obj.teste por exemplo.
+  Podemos adicionar ou remover uma propriedade de um objeto. Para adicionar basta escrever o nome do objeto seguido da        propriedade que deseja criar, obj.exemplo = 'Teste' por exemplo. Para remover basta escrever delete seguido do objeto com   a propriedade a ser excluída, delete obj.teste por exemplo.
   Podemos copiar as propriedades de um objeto para outro, basta utilizar Object.assign(objeto onde será copiado, objeto a     ser copiado).
-  Podemos obter as chaves do objeto(nome da propriedade) com Object.keys(objeto), irá retornar uma array com todas as     chaves que compõem o objeto.
+  Podemos obter as chaves do objeto(nome da propriedade) com Object.keys(objeto), irá retornar uma array com todas as         chaves que compõem o objeto.
   Mutação - podemos criar um objeto apartir de outro, por exemplo, let objt2 = objt, porém, qualquer mudança feita em ambos   os objetos, será aplicada a ambos.
+
+  Destructing 
+
+    Podemos copiar valores dentro de um object para outro, utilizando chaves, ficando: let {nome da variavel a ser              criada: nome da variavel a ser copiada} = object a ser copiado, as posições dos objects influencia qual propriedade         será copiada, exemplo: let{ex1: teste(copia a primeira posição do object), ex2: teste1(copia a segunda opção do             object)}.
   
 Funções
 
-  Uma função possui uma chamada(inicia a função), um parâmetro(valor que fica dentro do parenteses da função), ação(código   a ser executado quando a função é chamada) e um retorno(retorna o resultado da ação).
+  Uma função possui uma chamada(inicia a função), um parâmetro(valor que fica dentro do parenteses da função), ação(código    a ser executado quando a função é chamada) e um retorno(retorna o resultado da ação).
                          ___ parâmetro 
                         |
     ex: function parimp(n){
@@ -193,16 +208,26 @@ Funções
 
     var res = parimp(2) ------- chamada
 
-  Temos parâmetros pre-definidos(function soma(n1 = 0, n2 = 0)){}, esses parâmetros só são substituídos quando você passa   os parâmetros na chamada.
+  Temos parâmetros pre-definidos(function soma(n1 = 0, n2 = 0)){}, esses parâmetros só são substituídos quando você passa     os parâmetros na chamada.
 
   Closure
 
-    O closure é uma forma de acessar um escopo léxico de uma função pai de outra função
+    O closure é uma forma de acessar um escopo léxico de uma função pai de outra função.
 
   Recursion
 
-    Invoca a função dentro da mesma função
+    Invoca a função dentro da mesma função.
 
-Gerar número aleatórios com um valor mínimo e máximo = Math.floor(Math.random() * (máximo - mínimo + 1)) + mínimo
+  Rest Operator
 
-  Math.floor o número quebrado no menor numero inteiro próximo, o Math.random gera números aleatórios entre 0 e 1
+    Faz com que a função possa receber parametros ilimitados, utiliza-se o ...args(pode ser qualquer nome), ficando:     function função(...args){}.
+
+  Gerar número aleatórios com um valor mínimo e máximo = Math.floor(Math.random() * (máximo - mínimo + 1)) + mínimo
+
+  Math.floor arredonda o número quebrado no menor numero inteiro próximo, o Math.random gera números aleatórios entre 0 e 1
+
+JSON
+
+  JavaScript Object Notation é uma forma objeto, tanto que é escrito como se fosse um objeto, é utilizado na troca de   dados, tanto para receber, quanto para enviar, exemplo let ex = {"nome": "Marcos", "idade": 19, "ocupacao":       "Programador"}, sempre utilizando aspas duplas na propriedade e no valor(se for uma string).
+  Podemos transformar o JSON em uma string utilizando o stringify, ficando: let txt = JSON.stringify(JSON a ser convertido)
+  Para converter uma string a JSON novamente utiliza-se parse, ficando: let exJson = JSON.parse(string a ser convertida).
