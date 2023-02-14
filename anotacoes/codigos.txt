@@ -159,7 +159,7 @@ Variáveis compostas(Arrays/Vetores)
     Para adicionar um valor ao último elemento da array utilizamos o metodo interno push, ficando: variavel.push(valor).
     Para remover um valor do último elemento da array utilizamos o metodo interno pop, ficando: variavel.pop().
     Para encontrar o primeiro indice com valor da array utilizamos o metodo interno indexOf, ficando: variavel.indexOf          (valor), retornará a chave do primeiro valor encontrado.
-    Para encontrar o último indice com valor da array utilizamos o metodo interno lastIndexOf, ficando:                 variavel.lastIndexOf    (valor), retornará a chave do último valor encontrado.
+    Para encontrar o último indice com valor da array utilizamos o metodo interno lastIndexOf, ficando:                     variavel.lastIndexOf(valor), retornará a chave do último valor encontrado.
     Podemos verificar se um elemento existe dentro da variavel com o metodo interno inclues, ficando: variavel.includes         (valor).
     Podemos mostrar o array apartir de um índice com o metodo interno slice, ficando: variavel.slice(indice de partida),        este metodo retorna toda a array apartir do indice selecionado, para ter um indice inicial e final(começa em um             indice e vai ate outro indice escolhido) precisamos utilizar 2 parametros no metodo, ficando: variavel(inicio, fim).        Com números negativos como indice final, ele remove as ultimas propriedades da array, exemplo: -2 removeria as duas         ultimas propriedades. Com indice inicial negativo, a contagem é de trás pra frente, sendo -1 o ultimo indice.
     O metodo forEach retorna todo o valor da array, mas para isso precisamos criar uma arrow function, em uma array de          numeros por exemplo, ficando: variavel.forEach(num => {console.log(num)}), retornará cada valor da array.
@@ -187,6 +187,31 @@ Objetos
   Podemos copiar as propriedades de um objeto para outro, basta utilizar Object.assign(objeto onde será copiado, objeto a     ser copiado).
   Podemos obter as chaves do objeto(nome da propriedade) com Object.keys(objeto), irá retornar uma array com todas as         chaves que compõem o objeto.
   Mutação - podemos criar um objeto apartir de outro, por exemplo, let objt2 = objt, porém, qualquer mudança feita em ambos   os objetos, será aplicada a ambos.
+
+  Orientação a objetos
+
+    This faz referencia a uma propriedade dentro do proprio objeto, this.propriedade.
+    Prototype é o objeto pai de outro objeto, com ele podemos utilizar metodos do objeto pai no objeto filho. Todo objeto       criado do 0 tem como prototype o Object. Objetos que herdam outros objetos, o objeto base será o prototype do objeto     que herdou, sendo assim, ele poderá utilizar metodos e propriedades compartilhadas do seu prototype.
+    Classes funcionam como um molde para utilizar em seus objetos filhos, como por exemplo: let cachorro = {raca: 'SRD',        patas: 4}, apartir dai pode-se criar um objeto filho que herdará essas propriedades, e esse prototype servirá como uma      classe, let labrador = Object.create(cachorro), labrador.raca = 'Labrador'.
+    Instanciar é criar um novo objeto, utilizando funções podemos criar propriedades ja predefinidas, com a utilização de     funções, ficando: function criarCachorro(raca, cor){
+                                                        let cachorro = Object.create({})
+                                                        cachorro.raca = raca
+                                                        cachorro.cor = cor
+                                                        return cachorro
+                                                       }
+    com a utilação do new: function Cachorro(raca, cor){
+                                                        this.raca = raca
+                                                        this.cor = cor
+                                                       }
+    apartir daí pode-se criar um objeto que herdará essas proriedades, assim: let pitbull(qualquer raça que desejar) =          criarCachorro(raca, cor), com new: let pitbull = new Cachorro('Pitbull', 'Caramelo').
+    É importante separar metodos de propriedades, com a utilização das classes é importante utilizar apenas propriedades na     criação de classes, para implementar metodos precisa-se utilizar o constructor, ficando: Cachorro.prototype.uivar =     function(){console.log('Auuuu')}
+    Com o ES6 já é possivel utilizar o class constructor, ficando assim: class Cachorro{
+                                                                                        constructor(raca, cor){
+                                                                                          this.raca = raca
+                                                                                          this.cor = cor
+                                                                                        }
+                                                                                       }
+    let pinscher  = new Cachorro('Pinscher', 'Preto'). Constructor nao aceita novas propriedades sem ser as pre-definidas,      para criar novas propriedades é necessario a utilização do prototype.
 
   Destructing 
 
