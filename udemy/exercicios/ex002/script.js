@@ -1,6 +1,11 @@
-var tela = document.getElementById('tela')
-var n1 = 1
-var n2 = 2.5
-var s = n1 + n2
+let txtnum1 = window.prompt('Digite o 1° número')
+let txtnum2 = window.prompt('Digite o 2° número')
+let txtnum3 = window.prompt('Digite o 3º número')
 
-tela.innerText = `O número 1 é ${n1}, o número 2 é ${n2} e a soma é ${s}`
+let num1 = Number(txtnum1)
+let num2 = Number(txtnum2)
+let num3 = Number(txtnum3)
+
+let med = (num1 + num2 + num3) / 3
+
+alert(`A média é ${med}`)

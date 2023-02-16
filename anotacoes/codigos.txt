@@ -241,6 +241,15 @@ Funções
 
   Temos parâmetros pre-definidos(function soma(n1 = 0, n2 = 0)){}, esses parâmetros só são substituídos quando você passa     os parâmetros na chamada.
 
+  Podemos utilizar parametros ilimitados com a utilização de argumentos, com a utilização de arguments dentro da função,   exemplo de função soma com arguments: function soma(){
+                                                        let soma = 0
+                                                        for(let i = 0; i < arguments.length; i++){
+                                                          soma += arguments[i]
+                                                        }
+                                                        return soma
+                                                       }
+  invocando a função com a passagem de paramentros: soma(1, 2) retona 3, soma(1, 2, 3) retorna 6, pode-se utilizar quantos   parametros quiser, arguments armazena valores como se fosse uma array, por isso a utilização do arguments[i].
+
   Closure
 
     O closure é uma forma de acessar um escopo léxico de uma função pai de outra função.
