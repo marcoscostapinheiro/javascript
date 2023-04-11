@@ -2,19 +2,11 @@ let person = {
     firstname: 'Marcos',
     lastname: 'Pinheiro',
     mat: 'Math',
-    prof: function(mat){
-        return `Eu dou aula de ${mat}`
+    fullname: function(){
+        return this.firstname + ' ' + this.lastname
     }
 }
 
-let person2 = {
-    firstname: 'Lucas',
-    lastname: 'Pinheiro',
-    mat: 'Port'
-}
+let fName = person.fullname.bind(person)
 
-console.log(person.prof('Matemática'))
-
-person2.prof = person.prof.bind(person2)
-
-console.log(person2)
+console.log(fName())
